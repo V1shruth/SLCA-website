@@ -9,7 +9,7 @@ const App = () => {
       </h1>
       <div
         style={{
-          maxWidth: "75vw",
+          maxWidth: "1000px",
           width: "100%",
           height: "500px",
           margin: "0 auto",

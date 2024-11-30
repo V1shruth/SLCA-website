@@ -1,15 +1,16 @@
 import { useState } from "react";
-import companyLogo1 from "../assets/company_logos/AOPS Academy.png";
-import companyLogo2 from "../assets/company_logos/Chess Kings & Queens.png";
-import companyLogo3 from "../assets/company_logos/Chess.com.png";
-import companyLogo4 from "../assets/company_logos/Chipotle.png";
-import companyLogo5 from "../assets/company_logos/Jane Street.png";
-import companyLogo6 from "../assets/company_logos/Minnie's.png";
-import companyLogo7 from "../assets/company_logos/Texas Chess Center.png";
-import companyLogo8 from "../assets/company_logos/The Pop Parlour.png";
-import companyLogo9 from "../assets/company_logos/US Chess Federation.png";
-import companyLogo10 from "../assets/company_logos/US Chess Women.png";
-import companyLogo11 from "../assets/company_logos/Z.png";
+
+import companyLogo1 from "../assets/company_logos/AOPS Academy Resized.jpg";
+import companyLogo2 from "../assets/company_logos/Chess Kings & Queens Resized.jpg";
+import companyLogo3 from "../assets/company_logos/Chess.com Resized.jpg";
+import companyLogo4 from "../assets/company_logos/Chipotle Resized.jpg";
+import companyLogo5 from "../assets/company_logos/Jane Street Resized.jpg";
+import companyLogo6 from "../assets/company_logos/Minnie's Resized.jpg";
+import companyLogo7 from "../assets/company_logos/Texas Chess Center Resized.jpg";
+import companyLogo8 from "../assets/company_logos/The Pop Parlour Resized.jpg";
+import companyLogo9 from "../assets/company_logos/US Chess Federation Resized.jpg";
+import companyLogo10 from "../assets/company_logos/US Chess Women Resized.jpg";
+import companyLogo11 from "../assets/company_logos/Z Resized.jpg";
 
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 import "./Sponsors.css";

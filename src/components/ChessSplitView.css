@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.split-view {
+    display: flex;
+    height: 100vh;
+}
+
+.half {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    background-color: #f0f0f0; /* Optional */
+}
+
+.right {
+    background-color: #e0e0e0; /* Optional */
+}
+
+canvas {
+    display: block;
+}

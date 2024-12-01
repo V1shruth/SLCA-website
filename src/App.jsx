@@ -1,5 +1,6 @@
 import Button from "./components/Button";
 import Sponsors from "./components/Sponsors";
+import ChessSplitView from "./components/ChessSplitView";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       >
         <Sponsors />
       </div>
+      <ChessSplitView />
     </>
   );
 };

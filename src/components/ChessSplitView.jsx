@@ -32,13 +32,13 @@ const ChessSplitView = () => {
         <Canvas>
           <PerspectiveCamera
             makeDefault
-            position={[17, 21, 73]}
+            position={[17, 21, 65]}
             fov={75}
             near={0.1}
             far={2000}
             onUpdate={(self) => {
               self.lookAt(0, 0, 0);
-              self.setRotationFromEuler(new Euler(-0.1, 0, -0));
+              self.setRotationFromEuler(new Euler(-0.25, 0, -0));
             }}
           />
           <ambientLight intensity={0.5} />

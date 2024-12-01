@@ -6,6 +6,8 @@ body {
 .split-view {
     display: flex;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .quarter {
@@ -14,13 +16,17 @@ body {
 }
 
 .left {
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    position: absolute;
+    top: -40vh;
 }
 
 .right {
     position: absolute;
     right: 0;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    position: absolute;
+    top: -40vh;
 }
 
 canvas {

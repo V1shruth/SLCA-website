@@ -27,7 +27,9 @@ const ChessSplitView = () => {
           </Suspense>
         </Canvas>
       </div>
-
+      <div className="quarter middle">
+        <p>Bruh</p>
+      </div>
       <div className="quarter right">
         <Canvas>
           <PerspectiveCamera

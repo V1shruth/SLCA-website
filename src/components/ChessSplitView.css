@@ -15,14 +15,19 @@ body {
     height: auto;
     position: absolute;
     top: -30vh;
+    bottom: 0;
 }
 
 .left {
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
 }
 
+.middle {
+    width: 50%;
+    left: 25%;
+}
+
 .right {
-    position: absolute;
     right: 0;
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
 }

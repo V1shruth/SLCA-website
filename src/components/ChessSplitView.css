@@ -14,13 +14,13 @@ body {
 }
 
 .left {
-    background-color: #f0f0f0; /* Optional */
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);;
 }
 
 .right {
     position: absolute;
     right: 0;
-    background-color: #e0e0e0; /* Optional */
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);;
 }
 
 canvas {

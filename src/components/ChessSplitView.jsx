@@ -25,7 +25,6 @@ const ChessSplitView = () => {
           <Suspense fallback={null}>
             <ChessGame />
           </Suspense>
-          <axesHelper args={[200]} position={[15, 0, 0]} />
         </Canvas>
       </div>
 
@@ -46,7 +45,6 @@ const ChessSplitView = () => {
           <Suspense fallback={null}>
             <ChessGame />
           </Suspense>
-          <axesHelper args={[200]} />
         </Canvas>
       </div>
     </div>

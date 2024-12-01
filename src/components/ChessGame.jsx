@@ -1,9 +1,11 @@
-import { useGLTF, useTexture } from "@react-three/drei";
-import { useMemo } from "react";
+import { useGLTF, useTexture, useAnimations } from "@react-three/drei";
+import { useMemo, useRef, useEffect } from "react";
+import * as THREE from "three";
 
 const ChessGame = () => {
-  const { scene } = useGLTF("src/assets/chess_scene/chess_scene_1.glb");
-
+  const { scene, animations } = useGLTF(
+    "src/assets/chess_scene/chess_scene_1.glb"
+  );
   const whiteTexture = useTexture(
     "src/assets/chess_scene/textures/material_1_baseColor.jpg"
   );
@@ -13,7 +15,11 @@ const ChessGame = () => {
 
   const clonedScene = useMemo(() => scene.clone(), [scene]);
 
-  useMemo(() => {
+  const mixer = useRef();
+
+  const { actions } = useAnimations(animations, clonedScene);
+
+  useEffect(() => {
     clonedScene.traverse((object) => {
       if (object.isMesh && object.material) {
         object.castShadow = true;
@@ -32,12 +38,31 @@ const ChessGame = () => {
     clonedScene.scale.set(0.1, 0.1, 0.1);
     clonedScene.rotation.set(0, 0, 0);
     clonedScene.position.set(0, 0, 0);
-  }, [clonedScene, whiteTexture, blackTexture]);
 
-  return (
-    // The loaded GLTF scene is added to the 3D world as a `primitive` object.
-    <primitive object={clonedScene} />
-  );
+    if (animations.length > 0) {
+      mixer.current = new THREE.AnimationMixer(clonedScene);
+      animations.forEach((clip) => {
+        const action = mixer.current.clipAction(clip);
+
+        action.setLoop(THREE.LoopPingPong, Infinity);
+        action.play();
+      });
+    }
+
+    const animate = (time) => {
+      if (mixer.current) mixer.current.update(time / 1000);
+    };
+
+    clonedScene.traverse((child) => {
+      if (child.isMesh) {
+        child.addEventListener("animation", animate);
+      }
+    });
+
+    actions["Take 001"].play();
+  }, [clonedScene, whiteTexture, blackTexture, animations]);
+
+  return <primitive object={clonedScene} />;
 };
 
 export default ChessGame;

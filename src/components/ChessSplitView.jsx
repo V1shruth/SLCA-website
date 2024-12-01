@@ -1,5 +1,5 @@
-import { Canvas, useThree, useFrame } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { PerspectiveCamera } from "@react-three/drei";
 import ChessGame from "./ChessGame";
 import "./ChessSplitView.css";
 import { Suspense } from "react";

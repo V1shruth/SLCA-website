@@ -32,7 +32,12 @@ const ChessSplitView = () => {
         <h2 className="hero-section-h2">Using Chess to Make a Difference</h2>
         <img
           src="src/assets/Student Led Chess Association-logos.jpeg"
-          style={{ height: "35%", position: "absolute", bottom: "2vh" }}
+          style={{
+            height: "35%",
+            position: "absolute",
+            bottom: "2vh",
+            "border-radius": "15px",
+          }}
         ></img>
       </div>
       <div className="quarter right">

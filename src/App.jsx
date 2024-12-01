@@ -5,7 +5,7 @@ import ChessSplitView from "./components/ChessSplitView";
 const App = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
+      {/* <h1 className="text-3xl font-bold underline">
         Welcome to Student Led Chess Association!
       </h1>
       <div
@@ -17,7 +17,7 @@ const App = () => {
         }}
       >
         <Sponsors />
-      </div>
+      </div> */}
       <ChessSplitView />
     </>
   );

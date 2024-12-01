@@ -1,30 +1,52 @@
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import ChessGame from "./ChessGame";
 import "./ChessSplitView.css";
 import { Suspense } from "react";
+import { Euler } from "three";
 
 const ChessSplitView = () => {
   return (
     <div className="split-view">
-      {/* Left Half */}
-      <div className="half left">
-        <Canvas camera={{ position: [2, 2, 5], fov: 50 }}>
+      <div className="quarter left">
+        <Canvas>
+          <PerspectiveCamera
+            makeDefault
+            position={[15, 20, -20]}
+            fov={100}
+            near={0.1}
+            far={2000}
+            onUpdate={(self) => {
+              self.lookAt(0, 0, 0);
+              self.setRotationFromEuler(new Euler(-2.8, 0, 3.1));
+            }}
+          />
           <ambientLight intensity={0.5} />
           <Suspense fallback={null}>
             <ChessGame />
           </Suspense>
-          <OrbitControls />
+          <axesHelper args={[200]} position={[15, 0, 0]} />
         </Canvas>
       </div>
-      {/* Right Half */}
-      <div className="half right">
-        <Canvas camera={{ position: [-2, 2, 5], fov: 50 }}>
+
+      <div className="quarter right">
+        <Canvas>
+          <PerspectiveCamera
+            makeDefault
+            position={[17, 21, 73]}
+            fov={75}
+            near={0.1}
+            far={2000}
+            onUpdate={(self) => {
+              self.lookAt(0, 0, 0);
+              self.setRotationFromEuler(new Euler(-0.1, 0, -0));
+            }}
+          />
           <ambientLight intensity={0.5} />
           <Suspense fallback={null}>
             <ChessGame />
           </Suspense>
-          <OrbitControls />
+          <axesHelper args={[200]} />
         </Canvas>
       </div>
     </div>

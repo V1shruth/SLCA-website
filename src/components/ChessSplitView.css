@@ -8,8 +8,8 @@ body {
     height: 100vh;
 }
 
-.half {
-    width: 50%;
+.quarter {
+    width: 25%;
     height: 100%;
 }
 
@@ -18,6 +18,8 @@ body {
 }
 
 .right {
+    position: absolute;
+    right: 0;
     background-color: #e0e0e0; /* Optional */
 }
 

@@ -19,12 +19,19 @@ body {
 }
 
 .left {
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
 }
 
 .middle {
     width: 50%;
     left: 25%;
+    background: linear-gradient(to right, #0d1b2a, #1b263b);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
 }
 
 .right {
@@ -34,4 +41,16 @@ body {
 
 canvas {
     display: block;
+}
+
+.hero-section-h1 {
+    color: #fcdc6a;
+    font-size: 6vh;
+    margin: 0;
+}
+
+.hero-section-h2 {
+    color: #bb8ef0;
+    font-size: 3vh;
+    margin: 0;
 }

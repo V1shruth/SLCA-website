@@ -18,6 +18,13 @@ body {
     bottom: 0;
 }
 
+.half {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
 .left {
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
 }
@@ -44,12 +51,16 @@ canvas {
 }
 
 .hero-section-h1 {
+    top: 15%;
+    position: absolute;
     color: #fcdc6a;
     font-size: 6vh;
     margin: 0;
 }
 
 .hero-section-h2 {
+    top: 30%;
+    position: absolute;
     color: #bb8ef0;
     font-size: 3vh;
     margin: 0;

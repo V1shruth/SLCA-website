@@ -21,16 +21,16 @@ const App = () => {
       >
         <Sponsors />
       </div> */}
-      <ChessSplitView />
       {/* Navbar */}
       <Navbar />
-      
+      <ChessSplitView />
+
       <main className="mt-8">
         {/* Welcome Section */}
         <h1 className="text-3xl font-bold underline text-center">
           Welcome to Student Led Chess Association!
         </h1>
-        
+
         {/* Sponsors Section */}
         <div
           style={{
@@ -79,6 +79,8 @@ const App = () => {
             <div></div>
           </div>
         </section>
+
+        <p>iihi</p>
       </main>
     </>
   );

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .split-view {
@@ -15,6 +15,13 @@ body {
     height: auto;
     position: absolute;
     top: -30vh;
+    bottom: 0;
+}
+
+.half {
+    width: 25%;
+    position: absolute;
+    top: 0;
     bottom: 0;
 }
 
@@ -44,12 +51,16 @@ canvas {
 }
 
 .hero-section-h1 {
+    top: 15%;
+    position: absolute;
     color: #fcdc6a;
     font-size: 6vh;
     margin: 0;
 }
 
 .hero-section-h2 {
+    top: 30%;
+    position: absolute;
     color: #bb8ef0;
     font-size: 3vh;
     margin: 0;

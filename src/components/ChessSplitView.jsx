@@ -27,16 +27,16 @@ const ChessSplitView = () => {
           </Suspense>
         </Canvas>
       </div>
-      <div className="quarter middle">
+      <div className="half middle">
         <h1 className="hero-section-h1"> SLCA</h1>
         <h2 className="hero-section-h2">Using Chess to Make a Difference</h2>
         <img
           src="src/assets/Student Led Chess Association-logos.jpeg"
           style={{
-            height: "35%",
+            height: "50%",
             position: "absolute",
-            bottom: "2vh",
-            "border-radius": "15px",
+            bottom: "3vh",
+            borderRadius: "15px",
           }}
         ></img>
       </div>

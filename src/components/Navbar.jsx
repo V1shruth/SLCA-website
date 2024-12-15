@@ -11,19 +11,14 @@ const Navbar = () => {
       <div className="flex items-center space-x-4">
         {/* People Dropdown */}
         <div className="relative group">
-          <button className="hover:text-purple-400">
-            People ▼
-          </button>
-          
+          <button className="hover:text-purple-400">People ▼</button>
+
           <div
             className="hidden group-hover:flex absolute bg-purple-600 text-white mt-2 rounded shadow-md flex-col z-10"
             onMouseEnter={(e) => e.stopPropagation()} // Prevent disappearance
             onMouseLeave={(e) => e.stopPropagation()} // Prevent disappearance
           >
-            <Link
-              to="/meet-the-team"
-              className="px-4 py-2 hover:bg-purple-700"
-            >
+            <Link to="/meet-the-team" className="px-4 py-2 hover:bg-purple-700">
               Meet the Team
             </Link>
             <Link
@@ -33,30 +28,20 @@ const Navbar = () => {
               State Affiliates
             </Link>
           </div>
-
-
         </div>
 
         {/* Events Dropdown */}
         <div className="relative group">
-          <button className="hover:text-purple-400">
-            Events ▼
-          </button>
+          <button className="hover:text-purple-400">Events ▼</button>
           <div
             className="hidden group-hover:flex absolute bg-purple-600 text-white mt-2 rounded shadow-md flex-col z-10"
             onMouseEnter={(e) => e.stopPropagation()} // Prevent disappearance
             onMouseLeave={(e) => e.stopPropagation()} // Prevent disappearance
           >
-            <Link
-              to="/nhscl"
-              className="px-4 py-2 hover:bg-purple-700"
-            >
+            <Link to="/nhscl" className="px-4 py-2 hover:bg-purple-700">
               National High School Chess League
             </Link>
-            <Link
-              to="/ekg-chess"
-              className="px-4 py-2 hover:bg-purple-700"
-            >
+            <Link to="/ekg-chess" className="px-4 py-2 hover:bg-purple-700">
               EKG Chess
             </Link>
             <Link

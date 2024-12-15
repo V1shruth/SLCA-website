@@ -8,24 +8,13 @@ import AnimatedCounter from "./components/AnimatedCounter";
 const App = () => {
   return (
     <>
-      {/* <h1 className="text-3xl font-bold underline">
-        Welcome to Student Led Chess Association!
-      </h1>
-      <div
-        style={{
-          maxWidth: "1000px",
-          width: "100%",
-          height: "500px",
-          margin: "0 auto",
-        }}
-      >
-        <Sponsors />
-      </div> */}
       {/* Navbar */}
       <Navbar />
-      <ChessSplitView />
 
       <main className="mt-8">
+        {/* Hero Section */}
+        <ChessSplitView />
+
         {/* Welcome Section */}
         <h1 className="text-3xl font-bold underline text-center">
           Welcome to Student Led Chess Association!
@@ -79,8 +68,6 @@ const App = () => {
             <div></div>
           </div>
         </section>
-
-        <p>iihi</p>
       </main>
     </>
   );

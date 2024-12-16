@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 import Sponsors from "./components/Sponsors";
+import Photos from "./components/Photos";
 import ChessSplitView from "./components/ChessSplitView";
 import AnimatedCounter from "./components/AnimatedCounter";
 
@@ -17,10 +18,25 @@ const App = () => {
 
         {/* Welcome Section */}
         <h1 className="text-3xl font-bold underline text-center">
-          Welcome to Student Led Chess Association!
+          Welcome to Student Led Chess Association! Interested?
         </h1>
-
+        
+        {/* Interested Section */}
+        <div
+          style={{
+            maxWidth: "1000px",
+            width: "100%",
+            height: "500px",
+            margin: "0 auto",
+          }}
+        >
+          <Photos />
+        </div>
+        
         {/* Sponsors Section */}
+        <h1 className="text-3xl font-bold underline text-center">
+          Sponsors
+        </h1>
         <div
           style={{
             maxWidth: "1000px",
